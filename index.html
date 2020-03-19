@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Train Scheduler</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" src="assets/css/style.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Train Scheduler</h1>
+        <p class="lead">Check Train times and add your own Train.</p>
+      </div>
+    </div>
+    <table class="table table-striped table-dark">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Train Name</th>
+          <th scope="col">Destination</th>
+          <th scope="col">Frequency(min)</th>
+          <th scope="col">Next Arrival</th>
+          <th scope="col">Minutes Away</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Funk Train</td>
+          <td>Funk Town</td>
+          <td>50</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Hobo Train</td>
+          <td>Pueblo</td>
+          <td>69</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Soul Train</td>
+          <td>Under World</td>
+          <td>30</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <form>
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <h1>Add Train</h1>
+        </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Train Name</label>
+        <input
+          type="name"
+          class="form-control"
+          id="nameInput"
+          placeholder="Midnight Train"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput2">Destination</label>
+        <input
+        type="destination"
+        class="form-control"
+        id="destinationInput"
+        placeholder="Going Anywhere"
+      />
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput3">First Train Time (HH:MM | Military Time)</label>
+        <input
+        type="trainTime"
+        class="form-control"
+        id="trainTimeInput"
+        placeholder="05:30 PM"
+      />
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Frequency (Min)</label>
+        <input
+        type="frequency"
+        class="form-control"
+        id="frequencyInput"
+        placeholder="50"
+      />
+      <br><br>
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </div>
+    </form>
+  </div>
+  </div>
+  <script src="assets/javascript/app.js"></script>
+
+  </body>
+</html>
